@@ -12,8 +12,9 @@ return [
     | and used as needed; however, this mailer will be used by default.
     |
     */
+//   'default' => env('MAIL_MAILER', 'smtp'),
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'mailgun'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,9 +92,13 @@ return [
     |
     */
 
+    // 'from' => [
+    //     'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+    //     'name' => env('MAIL_FROM_NAME', 'Example'),
+    // ],
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'admin@itrax.com'),
+        'name' => env('MAIL_FROM_NAME', 'itraxcourse'),
     ],
 
     /*

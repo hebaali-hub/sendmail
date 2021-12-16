@@ -111,6 +111,7 @@ class RequestException extends TransferException implements RequestExceptionInte
         }
 
         return new $className($message, $request, $response, $previous, $handlerContext);
+    
     }
 
     /**
